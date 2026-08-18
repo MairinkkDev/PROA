@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Noto+Sans+Arabic:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(92, 91, 90);
+    font-family: "Comic Relief", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1f1d;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.pagina {
+    background-color: white;
+    width: 80%;
+    max-width: 1200px;
+    margin: 200px 350px 0 auto;
+    padding: 80px 60px;
+    border-radius: 25px;
+    position: relative;
+
+}
+
+.imagemback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.logo img {
+    display: block;
+}
+
+nav {
+    flex: 0.6;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu-links li a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
