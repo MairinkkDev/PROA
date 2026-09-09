@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// 2.4. Leia 3 valores diferentes e mostre a soma dos 2 maiores.
+
+
+//não usar var pq não entra no if
+
+let numero1 = prompt("Escreva um número"); 
+let numero2 = prompt("Escreva outro número");
+let numero3 = prompt("Escreva mais um número");
+
+let n1 = Number(numero1);
+let n2 = Number(numero2);
+let n3 = Number(numero3);
+
+if (isNaN(n1) || isNaN(n2) || isNaN(n3)) {
+    alert("Erro: Digite apenas números.");
+} else {
+    let menor = Math.min(n1, n2, n3);
+    let soma = n1 + n2 + n3 - menor;
+
+    alert("A soma dos dois maiores é: " + soma + "\nMenor número: " + menor);
+}
+
+
+    </script>
+</body>
+</html>

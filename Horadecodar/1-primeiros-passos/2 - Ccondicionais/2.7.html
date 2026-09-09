@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //2.7. Leia 6 números. Some apenas os valores
+        // menores que 72. Exiba a soma e todos os valores informados.
+
+
+        let numero1 = prompt("Escreva o primeiro número: ")
+        let numero2 = prompt("Escreva o segundo número: ")
+        let numero3 = prompt("Escreva o terceiro número: ")
+        let numero4 = prompt("Escreva o quarto número: ")
+        let numero5 = prompt("Escreva o quinto número: ")
+        let numero6 = prompt("Escreva o sexto número: ")
+
+        let n1 = Number(numero1)
+        let n2 = Number(numero2)
+        let n3 = Number(numero3)
+        let n4 = Number(numero4)
+        let n5 = Number(numero5)
+        let n6 = Number(numero6)
+
+        let soma = 0
+        let valores = ""
+        let maiores = ""
+
+if (n1 < 72) {
+    soma = soma + n1;
+} else {
+    maiores = maiores + n1 + "\n"
+}
+valores = valores + n1 + "\n"
+
+
+if (n2 < 72) {
+    soma = soma + n2;
+} else {
+    maiores = maiores + n2 + "\n"
+}
+valores = valores + n2 + "\n"
+
+
+if (n3 < 72) {
+    soma = soma + n3;
+} else {
+    maiores = maiores + n3 + "\n"
+}
+valores = valores + n3 + "\n"
+
+
+if (n4 < 72) {
+    soma = soma + n4;
+} else {
+    maiores = maiores + n4 + "\n"
+}
+valores = valores + n4 + "\n"
+
+
+if (n5 < 72) {
+    soma = soma + n5;
+} else {
+    maiores = maiores + n5 + "\n"
+}
+valores = valores + n5 + "\n"
+
+
+if (n6 < 72) {
+    soma = soma + n6
+} else {
+    maiores = maiores + n6 + "\n"
+}
+valores = valores + n6 + "\n"
+
+alert(
+    "Todos os valores informados:\n" + valores +
+    "\nSoma dos valores menores que 72: " + soma +
+    "\n\nMaior que 72:\n" + maiores
+);
+
+    </script>
+</body>
+</html>
