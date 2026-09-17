@@ -4,16 +4,52 @@
 
 	<script>
 
+let nome = prompt("Qual o seu nome?")
+
+alert("Olá " + nome + " é um prazer ter você por aqui!")
+
+
+
+
 	    // Aqui criamos uma variavel global. Global significa que o elemento pode ser acessado por qualquer método. Para tornar global, utilizamos a palavra static.
     
 		var saldo = 100.5; // Float (Número com ponto flutuante)
 
 		/*  Função principal. */
-		function inicio() {
+		function inicio(){
 
 			var escolha = parseInt(prompt('Selecione uma opção 1.) Saldo 2.) Depósito 3.) Saque 4.) Sair'));
 
-			if (escolha === 1) {
+			switch(escolha){
+				case 1: 
+				ver_saldo();
+
+				break;
+
+				case 2: 
+				fazer_deposito();
+
+				break;
+
+				case 3: 
+				fazer_saque();
+
+				break;
+
+				case 4: 
+				sair();
+
+				default:
+					erro()
+
+				break;
+
+			}
+        }
+
+
+
+			/*if (escolha === 1) {
 				ver_saldo();
 			} else if (escolha === 2) {
 				fazer_deposito();
@@ -24,7 +60,7 @@
 			} else {
 				erro();
 			}
-		}
+		}*/
 
 		/*  Função principal. */
 		function ver_saldo() {
@@ -51,6 +87,14 @@
 			if (isNaN(saque) || saque === '') {
 				alert('Por favor, informe um número:');
 				fazer_saque();
+					if (saque > saldo)
+						alert("Saldo restante negativo. Informe um falor menor que a quantidade do saldo")
+
+
+						if (saque <= 0) {
+							alert("Informe um valor maior que 0.")
+						}
+
 			} else {
 				saldo -= saque;
 				ver_saldo();
