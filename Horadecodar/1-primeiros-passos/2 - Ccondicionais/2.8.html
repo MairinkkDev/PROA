@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+let n1 = Number(prompt("Digite o 1º número (maior que 0 e menor que 10):"));
+let n2 = Number(prompt("Digite o 2º número (maior que 0 e menor que 10):"));
+let n3 = Number(prompt("Digite o 3º número (maior que 0 e menor que 10):"));
+let n4 = Number(prompt("Digite o 4º número (maior que 0 e menor que 10):"));
+
+if (n1 > 0 && n1 < 10 &&
+    n2 > 0 && n2 < 10 &&
+    n3 > 0 && n3 < 10 &&
+    n4 > 0 && n4 < 10) {
+
+    let media = (n1 + n2 + n3 + n4) / 4;
+
+    console.log("Média: " + media);
+
+    if (media > 5) {
+        console.log("Você passou no teste");
+    } else {
+        console.log("Tente novamente");
+    }
+
+} else {
+    console.log("Digite apenas números maiores que 0 e menores que 10.");
+}
+   
+    </script>
+</body>
+</html>
