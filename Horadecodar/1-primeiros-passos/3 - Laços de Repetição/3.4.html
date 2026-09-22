@@ -11,26 +11,20 @@
         //  inteiros entre eles.
 
 
-      var inicio = parseFloat(prompt("Insira um número: "));
-      var fim = parseFloat(prompt("insira um número maior que o primeiro: "));
+  let primeiro = Number(prompt("Digite o primeiro inteiro:"));
+let segundo = Number(prompt("Digite o segundo inteiro:"));
 
-      let n = 0
-      var limite = inicio - fim;
-      var v = 0
-      for (let i = inicio; i < fim; i++ ) {
-        n += inicio;
-        v++;
-        i++;
+let soma = 0;
+let quantidade = 0;
 
-        console.log("@@@ " + inicio + "@@@ " + fim)
-      }
+for (let i = primeiro; i <= segundo; i++) {
+    soma += i;
+    quantidade++;
+}
 
-      console.log ("--- " + inicio + " --- " + fim);
+let media = soma / quantidade;
 
-      let resultado = n/v;
-      console.log ("-------------------------------" + resultado);
-      console.log (v);
-      console.log (n);
+console.log("A média é: " + media);
 
 
 
