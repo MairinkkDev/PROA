@@ -1,13 +1,13 @@
 # Documentação da Estrutura de Dados — Hotel Nebula
 
-## 1. Visão Geral
-O banco de dados **`hotel_nebula`** foi projetado para centralizar e estruturar todas as operações do hotel, substituindo controles manuais e planilhas dispersas por um modelo relacional íntegro, normalizado até a **Terceira Forma Normal (3FN)** e compatível com **MySQL 8.0+**.
+##  Visão Geral
+O banco de dados **`hotel_nebula`** foi projetado para centralizar e estruturar todas as operações do hotel, substituindo controles manuais e planilhas dispersas por um modelo relacional íntegro, normalizado até a 
 
 A arquitetura separa claramente o ciclo de intenção de estadia (**Reservas**) da execução operacional real (**Hospedagens**), garantindo rastreabilidade financeira, controle de ocupação e histórico de atendimento.
 
 ---
 
-## 2. Regras de Negócio Principais
+##  Regras de Negócio Principais
 * **Padronização de Tarifas (3FN):** Os valores de diária e capacidade máxima pertencem à categoria do quarto (`categorias_quarto`), evitando redundância e inconsistências ao atualizar preços.
 * **Separação entre Reserva e Hospedagem:** Uma reserva (`reservas`) representa o agendamento futuro e pode ser cancelada ou resultar em *No-Show*. Apenas quando o hóspede realiza o *check-in* é gerado um registro efetivo em `hospedagens` (relação `1:0..1`).
 * **Rastreabilidade de Atendimento:** Cada hospedagem registra separadamente o profissional responsável pelo *check-in* e o profissional responsável pelo *check-out* (`profissionais`).
@@ -17,7 +17,7 @@ A arquitetura separa claramente o ciclo de intenção de estadia (**Reservas**) 
 
 ---
 
-## 3. Dicionário de Entidades (Tabelas)
+##  Dicionário de Entidades (Tabelas)
 
 | Tabela | Descrição | Chaves Principais |
 | :--- | :--- | :--- |
@@ -34,7 +34,7 @@ A arquitetura separa claramente o ciclo de intenção de estadia (**Reservas**) 
 
 ---
 
-## 4. Integridade, Restrições e Performance
+##  Integridade, Restrições e Performance
 * **Integridade Referencial (`FOREIGN KEY`):** Todas as chaves estrangeiras utilizam `ON UPDATE CASCADE` e políticas restritivas (`ON DELETE RESTRICT`) em cadastros mestres para impedir a exclusão acidental de hóspedes, quartos ou profissionais com histórico vinculado.
 * **Validação de Domínio (`CHECK` e `ENUM`):**
   * Datas validadas para impedir *check-out* anterior ao *check-in*.
@@ -44,7 +44,7 @@ A arquitetura separa claramente o ciclo de intenção de estadia (**Reservas**) 
 
 ---
 
-## 5. Ordem de Execução dos Scripts
+##  Ordem de Execução dos Scripts
 Para implantar e testar o ambiente no **MySQL Workbench**, execute os arquivos na seguinte sequência:
 1. `DDL.sql` — Cria o banco, tabelas, chaves, restrições e índices.
 2. `DML.sql` — Popula o banco com dados fictícios consistentes para testes.
