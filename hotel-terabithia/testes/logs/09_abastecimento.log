@@ -1,0 +1,118 @@
+Bem-vindo ao Hotel Terabithia
+Nome do usuário: Maria Silva
+Senha: 2678
+
+Bem-vindo ao Hotel Terabithia, Maria Silva. É um imenso prazer ter você por aqui!
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 5
+[Abastecimento]
+Wayne Oil -> Álcool (R$/L): 4,20
+Wayne Oil -> Gasolina (R$/L): 5,82
+Stark Petrol -> Álcool (R$/L): 4,35
+Stark Petrol -> Gasolina (R$/L): 6,17
+
+Wayne Oil -> Álcool: 4,20 | Gasolina: 5,82
+Stark Petrol -> Álcool: 4,35 | Gasolina: 6,17
+
+Custo de 42 L em cada cenário:
+  Wayne Oil:    Álcool R$ 176,40 | Gasolina R$ 244,44
+  Stark Petrol: Álcool R$ 182,70 | Gasolina R$ 259,14
+
+Wayne Oil: melhor opção = Gasolina | Total (42L) = R$ 244,44
+Stark Petrol: melhor opção = Gasolina | Total (42L) = R$ 259,14
+
+Ranking (menor para maior custo):
+1º Wayne Oil - Gasolina - R$ 244,44
+2º Stark Petrol - Gasolina - R$ 259,14
+
+Maria Silva, é mais barato abastecer com gasolina no posto Wayne Oil.
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 5
+[Abastecimento]
+Wayne Oil -> Álcool (R$/L): abc
+Preço inválido. Informe um valor maior que zero (ex.: 4,20).
+Wayne Oil -> Álcool (R$/L): 0
+Preço inválido. Informe um valor maior que zero (ex.: 4,20).
+Wayne Oil -> Álcool (R$/L): 3,90
+Wayne Oil -> Gasolina (R$/L): 6,00
+Stark Petrol -> Álcool (R$/L): 4,10
+Stark Petrol -> Gasolina (R$/L): 5,80
+
+Wayne Oil -> Álcool: 3,90 | Gasolina: 6,00
+Stark Petrol -> Álcool: 4,10 | Gasolina: 5,80
+
+Custo de 42 L em cada cenário:
+  Wayne Oil:    Álcool R$ 163,80 | Gasolina R$ 252,00
+  Stark Petrol: Álcool R$ 172,20 | Gasolina R$ 243,60
+
+Wayne Oil: melhor opção = Álcool | Total (42L) = R$ 163,80
+Stark Petrol: melhor opção = Gasolina | Total (42L) = R$ 243,60
+
+Ranking (menor para maior custo):
+1º Wayne Oil - Álcool - R$ 163,80
+2º Stark Petrol - Gasolina - R$ 243,60
+
+Maria Silva, é mais barato abastecer com álcool no posto Wayne Oil.
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 5
+[Abastecimento]
+Wayne Oil -> Álcool (R$/L): 5,00
+Wayne Oil -> Gasolina (R$/L): 6,00
+Stark Petrol -> Álcool (R$/L): 5,00
+Stark Petrol -> Gasolina (R$/L): 6,00
+
+Wayne Oil -> Álcool: 5,00 | Gasolina: 6,00
+Stark Petrol -> Álcool: 5,00 | Gasolina: 6,00
+
+Custo de 42 L em cada cenário:
+  Wayne Oil:    Álcool R$ 210,00 | Gasolina R$ 252,00
+  Stark Petrol: Álcool R$ 210,00 | Gasolina R$ 252,00
+
+Wayne Oil: melhor opção = Gasolina | Total (42L) = R$ 252,00
+Stark Petrol: melhor opção = Gasolina | Total (42L) = R$ 252,00
+
+Ranking (menor para maior custo):
+1º Wayne Oil - Gasolina - R$ 252,00
+2º Stark Petrol - Gasolina - R$ 252,00
+
+Maria Silva, o custo é o mesmo nos dois postos (R$ 252,00).
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 7
+Você deseja sair? (S/N): S
+Muito obrigado e até logo, Maria Silva.

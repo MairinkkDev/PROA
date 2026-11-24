@@ -1,0 +1,253 @@
+/* Variáveis de identidade visual da Loja Absurdália */
+:root {
+  --cor-fundo: #faf9f6;
+  --cor-superficie: #ffffff;
+  --cor-destaque-suave: #eef2ff;
+  --cor-primaria: #3b28cc;
+  --cor-primaria-hover: #291a99;
+  --cor-secundaria: #ffb703;
+  --cor-texto: #1e1e24;
+  --cor-texto-suave: #52525b;
+  --cor-borda: #d4d4d8;
+  --cor-sucesso: #15803d;
+  --cor-erro: #b91c1c;
+  --raio-borda: 12px;
+  --sombra-cartao: 0 4px 14px rgba(30, 30, 36, 0.06);
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  line-height: 1.6;
+}
+
+/* Link de acessibilidade para pular direto ao conteúdo */
+.skip-link {
+  position: absolute;
+  top: -80px;
+  left: 1rem;
+  z-index: 1050;
+  padding: 0.75rem 1rem;
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Foco visível bem marcado para navegação por teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--cor-secundaria);
+  outline-offset: 2px;
+}
+
+/* Cabeçalho e navegação */
+.site-header {
+  background-color: var(--cor-superficie);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--cor-primaria);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--cor-texto);
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--cor-primaria);
+  background-color: var(--cor-destaque-suave);
+}
+
+/* Seção inicial (Hero) */
+.hero {
+  background: linear-gradient(135deg, var(--cor-destaque-suave) 0%, #fef9c3 100%);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.eyebrow {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cor-primaria);
+}
+
+/* Botões personalizados */
+.btn-primario {
+  background-color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+  color: #ffffff;
+  font-weight: 600;
+  min-height: 44px;
+  border-radius: 8px;
+}
+
+.btn-primario:hover,
+.btn-primario:active {
+  background-color: var(--cor-primaria-hover);
+  border-color: var(--cor-primaria-hover);
+  color: #ffffff;
+}
+
+.btn-primario:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Cartões de produto */
+.product-card {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  box-shadow: var(--sombra-cartao);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(30, 30, 36, 0.1);
+}
+
+.product-thumb {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--cor-borda);
+  background-color: var(--cor-destaque-suave);
+}
+
+.regra-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background-color: var(--cor-destaque-suave);
+  color: var(--cor-primaria);
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--cor-texto);
+}
+
+.price-large {
+  font-size: 2rem;
+}
+
+/* Página de detalhe do produto */
+.product-detail-img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: var(--raio-borda);
+  border: 1px solid var(--cor-borda);
+  box-shadow: var(--sombra-cartao);
+}
+
+.quantity-field {
+  max-width: 120px;
+  min-height: 44px;
+}
+
+/* Caixa de resumo e painéis */
+.summary-box,
+.info-panel {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  padding: 1.5rem;
+  box-shadow: var(--sombra-cartao);
+}
+
+.summary-box {
+  position: sticky;
+  top: 1.25rem;
+}
+
+/* Página de sucesso */
+.success-panel {
+  max-width: 720px;
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  padding: 2.5rem 1.5rem;
+  box-shadow: var(--sombra-cartao);
+}
+
+.success-icon {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 1.25rem;
+  border-radius: 50%;
+  background-color: #dcfce7;
+  color: var(--cor-sucesso);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.order-data {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1.75rem 0;
+  text-align: left;
+}
+
+.order-data > div {
+  padding: 0.9rem 1rem;
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+}
+
+.order-data dt {
+  font-size: 0.82rem;
+  color: var(--cor-texto-suave);
+}
+
+.order-data dd {
+  margin: 0.2rem 0 0;
+  font-weight: 700;
+}
+
+/* Rodapé */
+.site-footer {
+  margin-top: 4rem;
+  background-color: #1e1e24;
+  color: #f4f4f5;
+}
+
+/* Respeita preferência de redução de movimento do usuário */
+@media (prefers-reduced-motion: reduce) {
+  .product-card {
+    transition: none;
+  }
+
+  .product-card:hover {
+    transform: none;
+  }
+}

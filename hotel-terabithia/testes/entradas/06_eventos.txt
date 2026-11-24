@@ -1,0 +1,44 @@
+Maria Silva
+2678
+3
+192
+segunda
+13
+8
+Lojas Transilvânia
+S
+3
+192
+segunda
+10
+5
+S
+Terça
+abc
+7
+0
+4
+Outra Empresa
+N
+3
+400
+3
+-3
+3
+abc
+3
+300
+sabado
+14
+2
+N
+3
+100
+domingo
+7
+8
+Cafe Sol
+S
+6
+7
+S

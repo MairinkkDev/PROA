@@ -1,0 +1,20 @@
+Bem-vindo ao Hotel Terabithia
+Nome do usuário: Maria Silva
+Senha: 2678
+
+Bem-vindo ao Hotel Terabithia, Maria Silva. É um imenso prazer ter você por aqui!
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 1
+[Reservas]
+Informe o valor da diária: 200
+Informe a quantidade de diárias (1-30): 
+Entrada de dados encerrada. Sistema finalizado.

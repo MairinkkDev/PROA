@@ -1,0 +1,164 @@
+Bem-vindo ao Hotel Terabithia
+Nome do usuário: Maria Silva
+Senha: 2678
+
+Bem-vindo ao Hotel Terabithia, Maria Silva. É um imenso prazer ter você por aqui!
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 1
+[Reservas]
+Informe o valor da diária: 200
+Informe a quantidade de diárias (1-30): 3
+Informe o nome do hóspede: Carla Souza
+Tipo de quarto (S/E/L): E
+Escolha um quarto (1-20): 7
+
+Resumo:
+Hóspede: Carla Souza
+Quarto: 7 (Executivo)
+Diárias: 3
+Subtotal: R$ 810,00
+Taxa de serviço (10%): R$ 81,00
+Total: R$ 891,00
+
+Maria Silva, confirma a reserva? (S/N): S
+Reserva efetuada com sucesso.
+
+Mapa de quartos (L = livre | O = ocupado):
+ [01:L] [02:L] [03:L] [04:L] [05:L]
+ [06:L] [07:O] [08:L] [09:L] [10:L]
+ [11:L] [12:L] [13:L] [14:L] [15:L]
+ [16:L] [17:L] [18:L] [19:L] [20:L]
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 1
+[Reservas]
+Informe o valor da diária: -5
+Valor inválido, Maria Silva
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 1
+[Reservas]
+Informe o valor da diária: 200
+Informe a quantidade de diárias (1-30): 31
+Valor inválido, Maria Silva
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 1
+[Reservas]
+Informe o valor da diária: 150
+Informe a quantidade de diárias (1-30): 2
+Informe o nome do hóspede: Joao Pedro
+Tipo de quarto (S/E/L): X
+Tipo inválido. Use S (Standard), E (Executivo) ou L (Luxo).
+Tipo de quarto (S/E/L): S
+Escolha um quarto (1-20): 7
+Quarto já está ocupado
+Quartos livres: 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Por favor, escolha outro quarto.
+Escolha um quarto (1-20): 25
+Quarto inválido. Informe um número de 1 a 20.
+Escolha um quarto (1-20): 8
+
+Resumo:
+Hóspede: Joao Pedro
+Quarto: 8 (Standard)
+Diárias: 2
+Subtotal: R$ 300,00
+Taxa de serviço (10%): R$ 30,00
+Total: R$ 330,00
+
+Maria Silva, confirma a reserva? (S/N): N
+Reserva não efetuada.
+
+Mapa de quartos (L = livre | O = ocupado):
+ [01:L] [02:L] [03:L] [04:L] [05:L]
+ [06:L] [07:O] [08:L] [09:L] [10:L]
+ [11:L] [12:L] [13:L] [14:L] [15:L]
+ [16:L] [17:L] [18:L] [19:L] [20:L]
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 1
+[Reservas]
+Informe o valor da diária: abc
+Valor inválido, Maria Silva
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 6
+[Relatórios Operacionais]
+=======================================================
+       Hotel Terabithia - Relatório Operacional
+=======================================================
+Indicador                                         Valor
+-------------------------------------------------------
+Reservas de quartos confirmadas                       1
+Quartos ocupados                                1 de 20
+Taxa de ocupação atual                             5,0%
+Hóspedes cadastrados                                  0
+Eventos confirmados                                   0
+-------------------------------------------------------
+Receita de hospedagem                         R$ 891,00
+Receita de eventos                              R$ 0,00
+Receita total geral                           R$ 891,00
+=======================================================
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 7
+Você deseja sair? (S/N): S
+Muito obrigado e até logo, Maria Silva.

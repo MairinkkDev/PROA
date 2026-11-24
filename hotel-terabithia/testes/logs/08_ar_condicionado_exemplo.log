@@ -1,0 +1,47 @@
+Bem-vindo ao Hotel Terabithia
+Nome do usuário: Maria Silva
+Senha: 2678
+
+Bem-vindo ao Hotel Terabithia, Maria Silva. É um imenso prazer ter você por aqui!
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 4
+[Ar-Condicionado]
+Empresa: Clima Forte
+Valor por aparelho: 120
+Quantidade: 10
+Desconto (%): 8
+Mínimo para desconto: 8
+Deslocamento: 150
+Desconto aplicado: R$ 96,00
+O serviço de Clima Forte custará R$ 1.254,00
+
+Deseja informar novos dados, Maria Silva? (S/N): N
+
+Resumo dos orçamentos (1 empresa):
+  Clima Forte              R$ 1.254,00
+
+O orçamento de menor valor é o de Clima Forte por R$ 1.254,00
+Melhor orçamento: Clima Forte — R$ 1.254,00
+Apenas uma empresa foi informada; não há outra proposta para comparar.
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 7
+Você deseja sair? (S/N): S
+Muito obrigado e até logo, Maria Silva.

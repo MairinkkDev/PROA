@@ -1,0 +1,154 @@
+Bem-vindo ao Hotel Terabithia
+Nome do usuário: Maria Silva
+Senha: 2678
+
+Bem-vindo ao Hotel Terabithia, Maria Silva. É um imenso prazer ter você por aqui!
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 2
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 1
+Nome do hóspede: Rosani Albuquerque
+Hóspede cadastrado com sucesso.
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 1
+Nome do hóspede: Rosani Albuquerque
+Hóspede já cadastrado
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 1
+Nome do hóspede: Rodrigo Lima
+Hóspede cadastrado com sucesso.
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 1
+Nome do hóspede: 123
+Nome inválido. Use apenas letras, espaços, ponto, hífen e apóstrofo (mínimo de 2 caracteres).
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 1
+Nome do hóspede: Ana Paula
+Hóspede cadastrado com sucesso.
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 1
+Nome do hóspede: Débora Menezes
+Hóspede cadastrado com sucesso.
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 2
+Nome do hóspede: Rosani Albuquerque
+Hóspede Rosani Albuquerque foi encontrado
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 2
+Nome do hóspede: rosani albuquerque
+Hóspede não encontrado
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 3
+Prefixo: Ro
+Resultados:
+[1] Rodrigo Lima
+[2] Rosani Albuquerque
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 3
+Prefixo: xyz
+Hóspede não encontrado
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 4
+Hóspedes cadastrados (A-Z): 4/15
+[1] Ana Paula - cadastrado em 22/11/2026 17:28:11
+[2] Débora Menezes - cadastrado em 22/11/2026 17:28:11
+[3] Rodrigo Lima - cadastrado em 22/11/2026 17:28:11
+[4] Rosani Albuquerque - cadastrado em 22/11/2026 17:28:11
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 5
+Hóspedes cadastrados (A-Z): 4/15
+[1] Ana Paula - cadastrado em 22/11/2026 17:28:11
+[2] Débora Menezes - cadastrado em 22/11/2026 17:28:11
+[3] Rodrigo Lima - cadastrado em 22/11/2026 17:28:11
+[4] Rosani Albuquerque - cadastrado em 22/11/2026 17:28:11
+Índice do hóspede a atualizar: 1
+Novo nome: Ana Paula Souza
+Operação realizada com sucesso
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 4
+Hóspedes cadastrados (A-Z): 4/15
+[1] Ana Paula Souza - cadastrado em 22/11/2026 17:28:11
+[2] Débora Menezes - cadastrado em 22/11/2026 17:28:11
+[3] Rodrigo Lima - cadastrado em 22/11/2026 17:28:11
+[4] Rosani Albuquerque - cadastrado em 22/11/2026 17:28:11
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 6
+Hóspedes cadastrados (A-Z): 4/15
+[1] Ana Paula Souza - cadastrado em 22/11/2026 17:28:11
+[2] Débora Menezes - cadastrado em 22/11/2026 17:28:11
+[3] Rodrigo Lima - cadastrado em 22/11/2026 17:28:11
+[4] Rosani Albuquerque - cadastrado em 22/11/2026 17:28:11
+Índice do hóspede a remover: 2
+Operação realizada com sucesso
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 4
+Hóspedes cadastrados (A-Z): 3/15
+[1] Ana Paula Souza - cadastrado em 22/11/2026 17:28:11
+[2] Rodrigo Lima - cadastrado em 22/11/2026 17:28:11
+[3] Rosani Albuquerque - cadastrado em 22/11/2026 17:28:11
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 9
+Por favor, informe um número entre 1 e 7
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: abc
+Por favor, informe um número entre 1 e 7
+
+[Cadastro de Hóspedes]
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 7
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 7
+Você deseja sair? (S/N): S
+Muito obrigado e até logo, Maria Silva.

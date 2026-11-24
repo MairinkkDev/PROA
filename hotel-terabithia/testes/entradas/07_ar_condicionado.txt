@@ -1,0 +1,28 @@
+Maria Silva
+2678
+4
+Clima Forte
+120
+10
+8
+8
+150
+S
+Gelo Total
+100
+10
+0
+1
+100
+S
+Frio Max
+-5
+abc
+90
+10
+15
+10
+50
+N
+7
+S

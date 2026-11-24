@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Especificações completas e escolha de quantidade dos produtos da Loja Absurdália.">
+  <meta property="og:title" content="Loja Absurdália | Detalhes do Produto">
+  <meta property="og:description" content="Confira os detalhes técnicos e regras criativas deste item impossível.">
+  <meta property="og:type" content="product">
+  <title>Loja Absurdália | Detalhes do Produto</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand brand-badge" href="index.html">
+          <img src="img/favicon.svg" alt="" width="30" height="30">
+          <span>Loja Absurdália</span>
+        </a>
+        <div class="ms-auto">
+          <a class="nav-link" href="index.html">Voltar à vitrine</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="container py-5">
+    <nav aria-label="Caminho de navegação" class="mb-4">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Vitrine</a></li>
+        <li class="breadcrumb-item active" aria-current="page" id="breadcrumbAtual">Carregando...</li>
+      </ol>
+    </nav>
+
+    <!-- Mensagem amigável caso o ID da URL não exista -->
+    <section id="erroProduto" class="info-panel text-center py-5" hidden>
+      <h1 class="h3 mb-3">Ops! Esse produto desapareceu em outra dimensão.</h1>
+      <p class="text-secondary mb-4">O código informado na URL não corresponde a nenhum item do nosso catálogo atual.</p>
+      <a class="btn btn-primario" href="index.html">Explorar todos os produtos disponíveis</a>
+    </section>
+
+    <!-- Conteúdo do produto válido -->
+    <article id="areaProduto" class="row g-5 align-items-start">
+      <div class="col-lg-6">
+        <img id="produtoImagem" src="img/guarda-chuva.svg" alt="" class="product-detail-img" width="400" height="300">
+      </div>
+
+      <div class="col-lg-6">
+        <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+          <span class="eyebrow" id="produtoCategoria">Categoria</span>
+          <span class="regra-badge" id="produtoRegra">Regra</span>
+        </div>
+
+        <h1 id="produtoNome" class="fw-bold mb-3">Nome do produto</h1>
+        <p id="produtoDescricaoCurta" class="lead"></p>
+        <p id="produtoDescricaoDetalhada" class="text-secondary"></p>
+
+        <p id="produtoPreco" class="price price-large my-3">R$ 0,00</p>
+
+        <section aria-labelledby="titulo-detalhes" class="mb-4">
+          <h2 id="titulo-detalhes" class="h5 fw-bold">Ficha técnica impossível</h2>
+          <ul id="produtoEspecificacoes" class="mt-2"></ul>
+        </section>
+
+        <form id="formProduto" novalidate>
+          <div class="mb-3">
+            <label for="quantidade" class="form-label fw-semibold">Quantidade (máx. 10 unidades)</label>
+            <input class="form-control quantity-field" id="quantidade" name="quantidade" type="number" min="1" max="10" value="1" required>
+          </div>
+          <button class="btn btn-primario btn-lg px-4" type="submit">Continuar para o checkout</button>
+        </form>
+        <div id="produtoFeedback" class="mt-3" role="status" aria-live="polite"></div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container">
+      <p class="mb-0">Loja Absurdália · Garantia vitalícia contra paradoxos temporais.</p>
+    </div>
+  </footer>
+
+  <script src="js/produtos.js" defer></script>
+  <script src="js/product.js" defer></script>
+</body>
+
+</html>

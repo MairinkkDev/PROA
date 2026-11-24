@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Loja Absurdália: catálogo de invenções impossíveis, objetos de bolso, artigos espaciais e curiosidades que não existem no mundo real.">
+  <meta property="og:title" content="Loja Absurdália | Invenções que Desafiam a Realidade">
+  <meta property="og:description" content="Explore nossa vitrine de produtos impossíveis: de jardins flutuantes a guarda-chuvas que preveem o futuro.">
+  <meta property="og:type" content="website">
+  <title>Loja Absurdália | Vitrine de Invenções Impossíveis</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand brand-badge" href="index.html">
+          <img src="img/favicon.svg" alt="" width="30" height="30">
+          <span>Loja Absurdália</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto gap-1">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Vitrine</a></li>
+            <li class="nav-item"><a class="nav-link" href="checkout.html">Finalizar compra</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero py-5">
+      <div class="container">
+        <p class="eyebrow mb-2">Empório de Curiosidades Impossíveis</p>
+        <h1 class="display-5 fw-bold mb-3">Objetos extraordinários que ainda não existem no mundo real.</h1>
+        <p class="lead col-lg-8 mb-0">Bem-vindo à Loja Absurdália. Aqui você encontra desde estações espaciais para formigas até jardins maiores que aviões comerciais.</p>
+      </div>
+    </section>
+
+    <section class="container py-5" aria-labelledby="titulo-produtos">
+      <div class="row g-3 align-items-end mb-4">
+        <div class="col-lg-4">
+          <h2 id="titulo-produtos" class="h3 mb-1">Catálogo Impossível</h2>
+          <p class="text-secondary small mb-0">Busque, filtre pela regra criativa ou ordene por preço.</p>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <label for="filtroProduto" class="form-label small fw-semibold">Buscar produto</label>
+          <input id="filtroProduto" class="form-control" type="search" placeholder="Ex.: Zumbilume, bolso..." autocomplete="off">
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <label for="filtroRegra" class="form-label small fw-semibold">Regra criativa</label>
+          <select id="filtroRegra" class="form-select">
+            <option value="todas">Todas as regras</option>
+            <option value="Cabe em um bolso">Cabe em um bolso</option>
+            <option value="Não cabe em um avião">Não cabe em um avião</option>
+            <option value="Usado no espaço sideral">Usado no espaço sideral</option>
+            <option value="Serve em uma formiga">Serve em uma formiga</option>
+            <option value="Começa com a letra Z">Começa com a letra Z</option>
+            <option value="Uso único">Uso único</option>
+          </select>
+        </div>
+
+        <div class="col-sm-12 col-lg-2">
+          <label for="ordenarProdutos" class="form-label small fw-semibold">Ordenar por</label>
+          <select id="ordenarProdutos" class="form-select">
+            <option value="padrao">Destaque</option>
+            <option value="nome-asc">Nome (A–Z)</option>
+            <option value="preco-asc">Menor preço</option>
+            <option value="preco-desc">Maior preço</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="mensagemFiltro" class="text-secondary small mb-3" role="status" aria-live="polite"></p>
+
+      <div class="row g-4" id="listaProdutos"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+      <p class="mb-0">Loja Absurdália · Comércio fictício de invenções impossíveis.</p>
+      <p class="mb-0 small text-secondary">Projeto front-end com HTML semântico, Bootstrap e JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/produtos.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+== Formatação e validação ==
+[OK]    moeda 1254
+[OK]    moeda 2206.08
+[OK]    moeda 0,5
+[OK]    numero 38.4 (1 casa)
+[OK]    percentual 15.0
+[OK]    parseDecimal '200'
+[OK]    parseDecimal '4,20' (vírgula)
+[OK]    parseDecimal 'abc' é vazio
+[OK]    parseDecimal '1e3' é vazio
+[OK]    parseInteiro '12'
+[OK]    parseInteiro '1.5' é vazio
+[OK]    parseInteiro 99999999999 é vazio
+[OK]    nome válido 'Carla Souza'
+[OK]    nome válido com acento 'Débora Menezes'
+[OK]    nome inválido '123'
+== Reservas de quartos ==
+[OK]    subtotal 200x3 executivo
+[OK]    taxa de serviço 10%
+[OK]    total final
+[OK]    standard 100x2
+[OK]    luxo 100x1
+[OK]    diária 0 inválida
+[OK]    diária negativa inválida
+[OK]    diária 0,01 válida
+[OK]    diárias 0 inválida
+[OK]    diárias 1 válida
+[OK]    diárias 30 válida
+[OK]    diárias 31 inválida
+[OK]    tipo 'e' minúsculo
+[OK]    tipo 'X' inválido
+[OK]    20 quartos livres no início
+[OK]    quarto 7 ocupado
+[OK]    19 livres após reserva
+[OK]    receita hospedagem
+[OK]    ocupar quarto ocupado lança exceção
+[OK]    quarto 21 inválido
+[OK]    quarto 0 inválido
+== Cadastro de hóspedes ==
+[OK]    cadastrar Rosani
+[OK]    duplicado
+[OK]    duplicado com espaços extras
+[OK]    busca exata encontrada
+[OK]    busca exata (outra caixa) não encontra
+[OK]    prefixo 'Ro' retorna 2
+[OK]    prefixo 'ro' (minúsculo) retorna 2
+[OK]    prefixo 'deb' casa 'Débora'
+[OK]    prefixo 'xyz' retorna 0
+[OK]    ordenação A-Z: 1º
+[OK]    ordenação A-Z: 2º (acento)
+[OK]    ordenação A-Z: último
+[OK]    atualizar índice 1
+[OK]    nome atualizado
+[OK]    atualizar para nome existente
+[OK]    atualizar índice 99
+[OK]    remover índice 1
+[OK]    total após remover
+[OK]    remover índice 0
+[OK]    15 cadastros aceitos
+[OK]    16º recusado
+[OK]    após remover, volta a aceitar
+== Eventos ==
+[OK]    192 convidados -> Laranja
+[OK]    192 convidados -> 42 cadeiras
+[OK]    150 convidados -> Laranja sem extras
+[OK]    151 convidados -> 1 cadeira
+[OK]    220 convidados -> Laranja 70 extras
+[OK]    220 convidados -> Laranja
+[OK]    221 convidados -> Colorado
+[OK]    350 convidados -> Colorado
+[OK]    351 inválido
+[OK]    -1 inválido
+[OK]    0 inválido
+[OK]    1 válido
+[OK]    dia 'terça-feira'
+[OK]    dia 'TERCA'
+[OK]    dia 'sabado'
+[OK]    dia 'Segunda feira'
+[OK]    dia 'feira' inválido
+[OK]    dia 'xyz' inválido
+[OK]    segunda 13h por 8h disponível
+[OK]    segunda 7h por 12h disponível (até 19h)
+[OK]    sexta 12h por 12h indisponível (terminaria às 24h)
+[OK]    segunda 11h por 12h termina às 23h
+[OK]    segunda 22h por 2h indisponível
+[OK]    segunda 6h indisponível
+[OK]    segunda 23h indisponível
+[OK]    sábado 7h por 8h disponível (até 15h)
+[OK]    sábado 14h por 2h indisponível
+[OK]    sábado 15h indisponível
+[OK]    domingo 14h por 1h disponível
+[OK]    domingo 16h indisponível
+[OK]    duração 0 inválida
+[OK]    duração 1 válida
+[OK]    duração 12 válida
+[OK]    duração 13 inválida
+[OK]    garçons base 192/12
+[OK]    garçons base 193/12 (arredonda p/ cima)
+[OK]    garçons reforço 8h
+[OK]    garçons reforço 7h (piso)
+[OK]    garçons reforço 1h
+[OK]    total garçons 192 convidados, 8h
+[OK]    custo garçons 20 x 8h
+[OK]    buffet café L
+[OK]    buffet água L
+[OK]    buffet salgados
+[OK]    buffet custo café
+[OK]    buffet custo água
+[OK]    buffet custo salgados
+[OK]    buffet custo total
+== Ar-condicionado ==
+[OK]    Clima Forte: desconto
+[OK]    Clima Forte: total
+[OK]    abaixo do mínimo: sem desconto
+[OK]    exatamente no mínimo: com desconto
+[OK]    desconto 0%
+[OK]    menor orçamento
+[OK]    maior orçamento
+[OK]    diferença % (2000 vs 1254)
+[OK]    melhor proposta zero: diferença não definida
+== Abastecimento ==
+[OK]    Wayne: gasolina
+[OK]    Wayne: custo gasolina 42L
+[OK]    Stark: gasolina
+[OK]    Stark: custo gasolina 42L
+[OK]    álcool exatamente a 70%: álcool
+[OK]    álcool logo acima de 70%: gasolina
+[OK]    álcool bem barato: álcool
+[OK]    custo álcool Wayne 42L
+[OK]    ranking: 1º Wayne
+[OK]    ranking: 2º Stark
+
+125 verificações, 0 falha(s).

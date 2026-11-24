@@ -1,0 +1,76 @@
+Bem-vindo ao Hotel Terabithia
+Nome do usuário: Maria Silva
+Senha: 2678
+
+Bem-vindo ao Hotel Terabithia, Maria Silva. É um imenso prazer ter você por aqui!
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 4
+[Ar-Condicionado]
+Empresa: Clima Forte
+Valor por aparelho: 120
+Quantidade: 10
+Desconto (%): 8
+Mínimo para desconto: 8
+Deslocamento: 150
+Desconto aplicado: R$ 96,00
+O serviço de Clima Forte custará R$ 1.254,00
+
+Deseja informar novos dados, Maria Silva? (S/N): S
+
+Empresa: Gelo Total
+Valor por aparelho: 100
+Quantidade: 10
+Desconto (%): 0
+Mínimo para desconto: 1
+Deslocamento: 100
+Desconto aplicado: R$ 0,00
+O serviço de Gelo Total custará R$ 1.100,00
+
+Deseja informar novos dados, Maria Silva? (S/N): S
+
+Empresa: Frio Max
+Valor por aparelho: -5
+Valor inválido. Informe um número maior que zero.
+Valor por aparelho: abc
+Valor inválido. Informe um número maior que zero.
+Valor por aparelho: 90
+Quantidade: 10
+Desconto (%): 15
+Mínimo para desconto: 10
+Deslocamento: 50
+Desconto aplicado: R$ 135,00
+O serviço de Frio Max custará R$ 815,00
+
+Deseja informar novos dados, Maria Silva? (S/N): N
+
+Resumo dos orçamentos (3 empresas):
+  Clima Forte              R$ 1.254,00
+  Gelo Total               R$ 1.100,00
+  Frio Max                 R$ 815,00
+
+O orçamento de menor valor é o de Frio Max por R$ 815,00
+Melhor orçamento: Frio Max — R$ 815,00
+Pior orçamento: Clima Forte — R$ 1.254,00
+Diferença percentual entre a melhor e a pior proposta: 53,87% (a pior é mais cara que a melhor)
+
+=== Hotel Terabithia - Menu Principal ===
+Selecione uma opção:
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 7
+Você deseja sair? (S/N): S
+Muito obrigado e até logo, Maria Silva.
