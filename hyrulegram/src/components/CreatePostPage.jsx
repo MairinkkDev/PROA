@@ -5,9 +5,9 @@ const POST_CATEGORIES = ['Lançamentos', 'Curiosidades', 'Cinema & TV', 'Música
 
 const GALLERY_PRESETS = [
   { label: 'Cajado Tri & Triforce', url: '/images/pre/cajado.jpg' },
-  { label: 'Espada Mestra Zonai', url: '/images/pre/avatars/sword.jpg' },
-  { label: 'Brasão Real de Hyrule', url: '/images/pre/avatars/brasao.jpg' },
-  { label: 'Ocarina do Tempo', url: '/images/pre/avatars/ocarina.jpg' },
+  { label: 'Espada Mestra Zonai', url: '/images/pre/sword.jpg' },
+  { label: 'Brasão Real de Hyrule', url: '/images/pre/brasao.jpg' },
+  { label: 'Ocarina do Tempo', url: '/images/pre/ocarina.jpg' },
 ]
 
 function CreatePostPage({ currentUser, onCreatePost, onCancel }) {
