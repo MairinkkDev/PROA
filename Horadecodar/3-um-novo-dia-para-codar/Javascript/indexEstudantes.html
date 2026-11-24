@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 - Estudantes</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>1 - Cadastro de Estudantes</h1>
+    <p class="descricao">Digite o nome de cada estudante. Digite <strong>PARE</strong> (ou clique em Encerrar) para exibir o total e a lista.</p>
+
+    <div class="grupo-input">
+      <input type="text" id="nomeEstudante" placeholder="Nome do estudante ou PARE">
+      <div class="botoes">
+        <button id="btnCadastrar">Cadastrar</button>
+        <button id="btnPare" class="secundario">PARE (Finalizar)</button>
+      </div>
+    </div>
+
+    <div id="mensagem" class="mensagem">Aguardando cadastros...</div>
+    <ul id="listaEstudantes"></ul>
+  </div>
+
+  <script src="/javascript/estudantes.js"></script>
+</body>
+</html>

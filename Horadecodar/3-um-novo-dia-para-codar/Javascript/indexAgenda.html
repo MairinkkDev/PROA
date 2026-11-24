@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 - Agenda de Contatos</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>4 - Agenda de Contatos</h1>
+    <p class="descricao">Comandos disponíveis: <strong>ADICIONAR</strong>, <strong>BUSCAR</strong>, <strong>REMOVER</strong>, <strong>LISTAR</strong> ou <strong>SAIR</strong>.</p>
+
+    <div class="grupo-input">
+      <input type="text" id="comando" placeholder="Digite um comando (ex: ADICIONAR) ou use os botões">
+      <input type="text" id="nomeContato" placeholder="Nome do contato">
+      <input type="text" id="telefoneContato" placeholder="Telefone (apenas para ADICIONAR)">
+
+      <div class="botoes">
+        <button id="btnExecutar">Executar Comando</button>
+        <button id="btnAdicionar" class="secundario">ADICIONAR</button>
+        <button id="btnBuscar" class="secundario">BUSCAR</button>
+        <button id="btnRemover" class="secundario">REMOVER</button>
+        <button id="btnListar" class="secundario">LISTAR</button>
+        <button id="btnSair" class="perigo">SAIR</button>
+      </div>
+    </div>
+
+    <div id="mensagem" class="mensagem">Digite um comando para começar.</div>
+  </div>
+
+  <script src="/javascript/agenda.js"></script>
+</body>
+</html>
