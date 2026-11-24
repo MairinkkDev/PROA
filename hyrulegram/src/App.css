@@ -1,0 +1,614 @@
+.app {
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+.feed {
+    width: min(100%, 490px);
+    margin: 24px auto;
+}
+
+/* Cabeçalho */
+.header {
+    height: 64px;
+    border-bottom: 1px solid #e5e7eb;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 max(20px, calc((100vw - 935px) / 2));
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header__logo {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: var(--brand-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__logo:hover {
+    color: var(--brand-hover);
+}
+
+.header__search {
+    background: #f3f4f6;
+    border-radius: 999px;
+    padding: 4px 14px;
+    width: 250px;
+}
+
+.header__actions {
+    display: flex;
+    gap: 16px;
+}
+
+.header__avatar {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.5px solid var(--brand-color);
+}
+
+.active-nav-icon {
+    color: var(--brand-color) !important;
+}
+
+.saved-badge {
+    position: absolute;
+    top: -4px;
+    right: -8px;
+    font-size: 10px;
+    padding: 3px 5px;
+    background-color: var(--gold-accent);
+    color: #111827;
+}
+
+/* Stories / Canais de Notícias */
+.stories-bar {
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.story-item {
+    border: 0;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 0;
+    min-width: 72px;
+}
+
+.story-ring {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    padding: 2.5px;
+    background: linear-gradient(135deg, #115e45, #d4af37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.15s ease;
+}
+
+.story-ring.viewed {
+    background: #cbd5e1;
+}
+
+.story-ring.no-story-ring {
+    background: #e5e7eb;
+}
+
+.story-item:hover .story-ring {
+    transform: scale(1.06);
+}
+
+.story-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.story-name {
+    font-size: 11px;
+    color: #374151;
+    max-width: 76px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.story-add-badge {
+    position: absolute;
+    right: 6px;
+    bottom: 18px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background: var(--brand-color);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+.story-add-badge:hover {
+    background: var(--brand-hover);
+}
+
+/* Visualizador de Stories */
+.story-viewer-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 15, 20, 0.92);
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 12px;
+}
+
+.story-viewer-card {
+    width: min(100%, 390px);
+    height: min(90vh, 700px);
+    background: #111827;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.story-progress-row {
+    display: flex;
+    gap: 4px;
+    padding: 10px 12px 6px;
+    z-index: 5;
+}
+
+.story-progress-track {
+    flex: 1;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.story-progress-fill {
+    height: 100%;
+    background: #ffffff;
+    transition: width 0.05s linear;
+}
+
+.story-viewer-header {
+    display: flex;
+    align-items: center;
+    padding: 4px 12px 10px;
+    z-index: 5;
+}
+
+.story-viewer-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.5px solid #ffffff;
+}
+
+.story-header-btn {
+    border: 0;
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.story-header-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.story-media-wrapper {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+}
+
+.story-media-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-tap-left,
+.story-tap-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 42%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.story-tap-left {
+    left: 0;
+}
+
+.story-tap-right {
+    right: 0;
+}
+
+.story-caption-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 28px 16px 14px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.82));
+    z-index: 4;
+}
+
+.story-viewer-footer {
+    padding: 10px 12px;
+    background: #111827;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 5;
+}
+
+.story-reply-input {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+    border-radius: 999px !important;
+}
+
+.story-reply-input::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.story-nav-arrow {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 0;
+    background: rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.story-nav-arrow:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.story-preview-box {
+    width: 150px;
+    height: 240px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid var(--brand-color);
+}
+
+.story-preview-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.72);
+    color: #ffffff;
+    font-size: 11px;
+}
+
+/* Atalho criar post no feed */
+.create-prompt-card {
+    border-radius: 12px;
+}
+
+.create-prompt-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Página de Criação de Post */
+.create-post-page {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.create-preview-frame {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-height: 320px;
+}
+
+/* Tela de Perfil */
+.profile-header-card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.profile-avatar-ring {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #d1d5db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-avatar-ring.has-story {
+    background: linear-gradient(135deg, #115e45, #d4af37);
+}
+
+.profile-page__avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2.5px solid #ffffff;
+}
+
+.profile-tab-btn {
+    border: 0;
+    background: transparent;
+    padding: 10px 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b7280;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.profile-tab-btn.active {
+    color: var(--brand-color);
+    border-bottom-color: var(--brand-color);
+    background: var(--brand-soft);
+}
+
+.profile-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+
+.profile-grid-tile {
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+
+.profile-grid-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s ease;
+}
+
+.profile-grid-tile:hover .profile-grid-overlay {
+    opacity: 1;
+}
+
+.profile-grid-delete {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    padding: 3px 6px;
+    z-index: 2;
+}
+
+/* Publicações / Notícias */
+.post {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.post__header {
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post__avatar {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #efefef;
+}
+
+.post__user {
+    display: grid;
+    gap: 1px;
+}
+
+.post__user strong {
+    font-size: 14px;
+    color: #111827;
+}
+
+.post__user span {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.post__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: #f3f4f6;
+    cursor: pointer;
+}
+
+.news-strip {
+    background: var(--brand-soft);
+    border-top: 1px solid #d1fae5;
+    border-bottom: 1px solid #d1fae5;
+}
+
+.text-brand {
+    color: var(--brand-color);
+}
+
+.btn-brand {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+    color: #ffffff;
+}
+
+.btn-brand:hover {
+    background-color: var(--brand-hover);
+    border-color: var(--brand-hover);
+    color: #ffffff;
+}
+
+.icon-button {
+    border: 0;
+    background: transparent;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #1f2937;
+    display: grid;
+    place-items: center;
+}
+
+.icon-button:hover {
+    opacity: 0.65;
+}
+
+.post__content {
+    padding: 12px 14px 14px;
+}
+
+.post__actions {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 8px;
+}
+
+.post__actions .icon-button {
+    padding: 0;
+}
+
+.post__actions .icon-button:last-child {
+    margin-left: auto;
+}
+
+.post__likes {
+    margin: 0 0 6px;
+    font-size: 14px;
+}
+
+.post__caption {
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+/* Modal de Notícias Salvas */
+.modal-backdrop-custom {
+    position: fixed;
+    inset: 0;
+    background: rgba(17, 24, 39, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    z-index: 50;
+}
+
+.saved-modal-card {
+    width: min(100%, 460px);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* Notificação rápida */
+.toast-banner {
+    position: fixed;
+    top: 76px;
+    right: 20px;
+    z-index: 70;
+    border-radius: 10px;
+}
+
+/* Navegação Mobile */
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .app {
+        padding-bottom: 64px;
+    }
+
+    .feed {
+        width: 100%;
+        margin: 12px auto;
+    }
+
+    .post {
+        border-inline: 0;
+        border-radius: 0;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 56px;
+        background: #ffffff;
+        border-top: 1px solid #e5e7eb;
+        z-index: 20;
+    }
+
+    .mobile-nav button {
+        border: 0;
+        background: transparent;
+        font-size: 22px;
+        color: #1f2937;
+    }
+}

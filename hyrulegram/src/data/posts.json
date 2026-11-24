@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "user": "zelda.oficial",
+    "fullName": "Crônicas de Hyrule",
+    "bio": "Portal oficial de novidades, trailers e bastidores da franquia The Legend of Zelda.",
+    "location": "Castelo de Hyrule • Nintendo",
+    "avatar": "/images/avatars/zelda-oficial.jpg",
+    "image": "/images/posts/noticia-1.jpg",
+    "alt": "Ilustração do Cajado Tri e da Triforce em meio às fendas de Echoes of Wisdom",
+    "headline": "Echoes of Wisdom ultrapassa 4 milhões de cópias e ganha guia de bastidores",
+    "summary": "A aventura protagonizada pela Princesa Zelda conquistou jogadores com o sistema de Ecos e mecânicas criativas de resolução de quebra-cabeças.",
+    "fullText": "A Nintendo divulgou novos números e artes conceituais de The Legend of Zelda: Echoes of Wisdom. Segundo os desenvolvedores, o sistema de criar Ecos de objetos e monstros nasceu de protótipos internos em que os jogadores podiam copiar elementos do cenário para atravessar masmorras de maneiras totalmente livres. O diretor Satoshi Terada destacou que cada templo foi testado para permitir dezenas de soluções diferentes.",
+    "publishedAt": "Há 2 horas",
+    "category": "Lançamentos",
+    "likes": 428,
+    "comments": [
+      {
+        "id": 101,
+        "author": "sheikah.news",
+        "text": "Jogar com a Zelda usando o Cajado Tri foi uma das melhores ideias da série!"
+      },
+      {
+        "id": 102,
+        "author": "korok.daily",
+        "text": "Empilhar camas para escalar montanhas continua sendo a melhor estratégia."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "user": "sheikah.news",
+    "fullName": "Arquivo Sheikah",
+    "bio": "Análises técnicas, descobertas de lore, segredos Zonai e teorias da linha do tempo.",
+    "location": "Vila Kakariko • Laboratório Ancestral",
+    "avatar": "/images/avatars/sheikah-news.jpg",
+    "image": "/images/posts/noticia-2.jpg",
+    "alt": "Espada Mestra sobre uma ilha flutuante Zonai em Tears of the Kingdom",
+    "headline": "Comunidade descobre nova técnica de engenharia Zonai em Tears of the Kingdom",
+    "summary": "Jogadores encontraram uma combinação de propulsores e estabilizadores capaz de atravessar todo o céu de Hyrule sem gastar energia extra.",
+    "fullText": "Mais de três anos após o lançamento de The Legend of Zelda: Tears of the Kingdom, a física do motor Ultrahand continua surpreendendo. Engenheiros virtuais da comunidade descobriram que alinhar dois ventiladores em ângulo invertido com um estabilizador cria sustentação contínua com consumo mínimo de bateria Zonai, permitindo explorar as ilhas celestes mais altas sem precisar de recargas.",
+    "publishedAt": "Há 5 horas",
+    "category": "Curiosidades",
+    "likes": 519,
+    "comments": [
+      {
+        "id": 201,
+        "author": "hylian.herald",
+        "text": "A física desse jogo parece infinita, todo mês aparece algo novo!"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "user": "hylian.herald",
+    "fullName": "Arauto de Hyrule",
+    "bio": "Cobertura completa sobre adaptações, cinema, eventos oficiais e cultura gamer.",
+    "location": "Planície de Hyrule • Redação Central",
+    "avatar": "/images/avatars/hylian-herald.jpg",
+    "image": "/images/posts/noticia-3.jpg",
+    "alt": "Brasão Real de Hyrule com a Triforce dourada sobre fundo verde-esmeralda",
+    "headline": "Filme live-action de The Legend of Zelda tem novas atualizações de produção",
+    "summary": "Shigeru Miyamoto e o diretor Wes Ball comentaram o foco em mundos práticos, atmosfera de aventura clássica e fidelidade ao espírito dos jogos.",
+    "fullText": "Em recente atualização para investidores e fãs, a Nintendo reforçou que a produção do longa-metragem live-action de The Legend of Zelda segue avançando em parceria com a Sony Pictures. O diretor Wes Ball afirmou que busca capturar a sensação de descoberta e encantamento presente nas obras de aventura épica, priorizando locações reais e efeitos práticos para dar vida às paisagens de Hyrule.",
+    "publishedAt": "Há 1 dia",
+    "category": "Cinema & TV",
+    "likes": 694,
+    "comments": [
+      {
+        "id": 301,
+        "author": "zelda.oficial",
+        "text": "A expectativa para ver Hyrule nas telonas está altíssima!"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "user": "korok.daily",
+    "fullName": "Diário da Floresta Korok",
+    "bio": "Trilhas sonoras, concertos sinfônicos, artes de fãs e segredos escondidos sob cada pedra.",
+    "location": "Floresta Perdida • Grande Árvore Deku",
+    "avatar": "/images/avatars/korok-daily.jpg",
+    "image": "/images/posts/noticia-4.jpg",
+    "alt": "Ocarina do Tempo azul sobre pautas musicais douradas",
+    "headline": "Concerto sinfônico celebra os temas clássicos de Ocarina of Time e Wind Waker",
+    "summary": "Apresentação especial trouxe arranjos inéditos de Koji Kondo com coro completo e projeções sincronizadas das cenas mais marcantes da saga.",
+    "fullText": "Os fãs da trilha sonora de The Legend of Zelda foram presenteados com um concerto orquestral dedicado aos 40 anos da franquia. O repertório incluiu suítes completas de Ocarina of Time, Majora's Mask, The Wind Waker e Breath of the Wild, destacando o papel essencial da música na narrativa da série — desde as melodias tocadas na ocarina até os acordes minimalistas de piano nas ruínas de Hyrule.",
+    "publishedAt": "Há 2 dias",
+    "category": "Música & Eventos",
+    "likes": 382,
+    "comments": [
+      {
+        "id": 401,
+        "author": "sheikah.news",
+        "text": "Song of Storms e Gerudo Valley ao vivo arrepiam qualquer fã!"
+      }
+    ]
+  }
+]
