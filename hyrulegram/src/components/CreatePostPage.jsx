@@ -4,10 +4,10 @@ import { FiArrowLeft, FiImage, FiMapPin, FiPlusSquare, FiTag } from 'react-icons
 const POST_CATEGORIES = ['Lançamentos', 'Curiosidades', 'Cinema & TV', 'Música & Eventos']
 
 const GALLERY_PRESETS = [
-  { label: 'Cajado Tri & Triforce', url: '/images/posts/noticia-1.jpg' },
-  { label: 'Espada Mestra Zonai', url: '/images/posts/noticia-2.jpg' },
-  { label: 'Brasão Real de Hyrule', url: '/images/posts/noticia-3.jpg' },
-  { label: 'Ocarina do Tempo', url: '/images/posts/noticia-4.jpg' },
+  { label: 'Cajado Tri & Triforce', url: '/images/pre/cajado.jpg' },
+  { label: 'Espada Mestra Zonai', url: '/pre/avatars/sword.jpg' },
+  { label: 'Brasão Real de Hyrule', url: '/pre/avatars/brasao.jpg' },
+  { label: 'Ocarina do Tempo', url: '/pre/avatars/ocarina.jpg' },
 ]
 
 function CreatePostPage({ currentUser, onCreatePost, onCancel }) {
