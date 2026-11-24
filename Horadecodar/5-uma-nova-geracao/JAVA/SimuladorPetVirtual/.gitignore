@@ -1,0 +1,17 @@
+# Compiled class files
+*.class
+out/*
+!out/.gitkeep
+
+# IntelliJ IDEA user-specific files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries
+.idea/shelf
+*.iws
+*.ipr
+
+# Temporary files
+sources.txt
+*.log
