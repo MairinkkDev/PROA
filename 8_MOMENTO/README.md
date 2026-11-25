@@ -58,7 +58,7 @@ VALUES
 
 **1.2** Agora que você faz parte da equipe, quantos funcionários temos ao total na empresa?
 
-R: tem 124 funcionarios
+R: 124 funcionários
 
 ```sql
 select count(*)
@@ -67,7 +67,7 @@ from funcionarios;
 
 **1.3** Quantos funcionários trabalham especificamente no Departamento de Tecnologia?
 
-R: Tem 14 funcionarios
+R: 14 funcionários 
 
 ```sql
 select count(*)
@@ -78,7 +78,7 @@ or departamento_id = 6;
 
 **1.4** Liste todos os departamentos que existem na empresa. Quantos são?
 
-R: São 30 departamentos
+R: 30 departamentos
 ```
 departamento_id | Nome | Educacional | Escritorio
 1	Administração Executiva	0	1700
@@ -123,7 +123,7 @@ from departamentos;
 
 **1.5** Quantos escritórios a Momento possui? Em quais países?
 
-R: Possui 20 escritorios
+R: Possui 20 escritórios 
 ```
 Pais ID | Nome Pais
 AR	Argentina
@@ -165,7 +165,7 @@ O CFO precisa de relatórios urgentes sobre os custos da empresa.
 
 **2.1** Quantos funcionários trabalham no Departamento de Vendas?
 
-R: Trabalham 5 funcionários
+R:  5 funcionários
 
 ```sql
 select count(*)
@@ -253,7 +253,7 @@ O RH está fazendo uma análise demográfica da empresa.
 
 **3.1** Quantos funcionários da empresa Momento possuem cônjuges?
 
-R: Possui 15 funcionarios com cônjuges
+R:  15 funcionarios com cônjuges
 
 ```sql
 SELECT count(funcionarios.funcionario_id) AS quantidade_funcionario
@@ -265,7 +265,7 @@ WHERE dependentes.relacionamento = 'Cônjuge';
 
 **3.2** Quantos funcionários possuem filhos registrados?
 
-R: Possui 80 funcionarios com filhos(as).
+R: 80 funcionarios com filhos(as).
 
 ```sql
 SELECT count(funcionarios.funcionario_id) AS quantidade_funcionario
@@ -277,7 +277,7 @@ WHERE dependentes.relacionamento = 'Filha(o)';
 
 **3.3** Qual funcionário foi contratado há mais tempo na empresa?
 
-R:Foi a Madeleine Prior.
+R: Madeleine Prior.
 
 ```sql
 SELECT concat(primeiro_nome, ' ',sobrenome) AS nome_completo
@@ -289,7 +289,7 @@ FROM funcionarios);
 
 **3.4** Qual funcionário foi contratado há menos tempo na empresa?
 
-R:Foi o Ariel Nunes.
+R:Ariel Nunes.
 
 ```sql
 SELECT concat(primeiro_nome, ' ',sobrenome) AS nome_completo
@@ -441,7 +441,7 @@ ORDER BY custo_total_suprimentos DESC;
 
 **4.2** Qual escritório possui a maior quantidade de diferentes tipos de suprimentos?
 
-R: O koboa koboa com 7 suprimentos diferentes.
+R: O koboa koboa, com 7 suprimentos diferentes.
 
 ```sql
 SELECT 
@@ -467,7 +467,7 @@ LIMIT 1;
 
 **4.4** Calcule o valor total do inventário de suprimentos da empresa (quantidade × preço unitário de todos os itens em todos os escritórios).
 
-R: O valor total é 700.535,50.
+R: O valor total é R$700.535,50.
 
 ```sql
 SELECT FORMAT(SUM(quantidade_estoque * custo_unitario),2) AS valor_total_inventario
@@ -535,7 +535,7 @@ LIMIT 1;
 
 **5.3** Qual é o produto menos vendido?
 
-R: É o chapeu seletor com apenas 1 venda
+R:  chapeu seletor com apenas uma venda
 
 ```sql
 SELECT 
@@ -550,7 +550,7 @@ LIMIT 1;
 
 **5.4** Pensando na relação quantidade × valor unitário, qual produto gerou mais receita para a empresa?
 
-R: O Tesseract decorativo com o valor total em vendas de	236788.65
+R: O Tesseract decorativo com o valor total em vendas de	R$ 236788.65
 
 ```sql
 SELECT 
@@ -565,7 +565,7 @@ LIMIT 1;
 
 **5.5** Qual é o produto mais caro (maior preço unitário) no catálogo?
 
-R: É o Tesseract decorativo	custando	7000.00	USD
+R:  Tesseract decorativo	custando	7000.00	USD
 
 ```sql
 SELECT 
@@ -589,7 +589,7 @@ FROM itens_venda iv;
 
 **5.7** Quantas vendas foram realizadas no mês de junho de 2023?
 
-R: Foram realizadas duas vendas
+R: duas vendas
 
 ```sql
 SELECT 
@@ -926,7 +926,7 @@ R:Satisfação dos estudantes, para ver o nivel de qualidade do curso e do objet
 
 O que faz a tabela **__vinculos_talentos__**?
 
-R: Ela vicula os estudantes a empresa.
+R: Ela vicula os estudantes à empresa.
 
 ## Nível 8: Duas Frentes, Duas Operações
 
